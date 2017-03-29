@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4D4349941E86802C000EB4C6"
-               BuildableName = "PizzaHunters.app"
-               BlueprintName = "PizzaHunters"
-               ReferencedContainer = "container:PizzaHunters.xcodeproj">
+               BuildableName = "GoodAsPizzaPlace.app"
+               BlueprintName = "GoodAsPizzaPlace"
+               ReferencedContainer = "container:GoodAsPizzaPlace.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4D4349A81E86802E000EB4C6"
-               BuildableName = "PizzaHuntersTests.xctest"
-               BlueprintName = "PizzaHuntersTests"
-               ReferencedContainer = "container:PizzaHunters.xcodeproj">
+               BuildableName = "GoodAsPizzaPlaceTests.xctest"
+               BlueprintName = "GoodAsPizzaPlaceTests"
+               ReferencedContainer = "container:GoodAsPizzaPlace.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4D4349B31E86802E000EB4C6"
-               BuildableName = "PizzaHuntersUITests.xctest"
-               BlueprintName = "PizzaHuntersUITests"
-               ReferencedContainer = "container:PizzaHunters.xcodeproj">
+               BuildableName = "GoodAsPizzaPlaceUITests.xctest"
+               BlueprintName = "GoodAsPizzaPlaceUITests"
+               ReferencedContainer = "container:GoodAsPizzaPlace.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4D4349941E86802C000EB4C6"
-            BuildableName = "PizzaHunters.app"
-            BlueprintName = "PizzaHunters"
-            ReferencedContainer = "container:PizzaHunters.xcodeproj">
+            BuildableName = "GoodAsPizzaPlace.app"
+            BlueprintName = "GoodAsPizzaPlace"
+            ReferencedContainer = "container:GoodAsPizzaPlace.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4D4349941E86802C000EB4C6"
-            BuildableName = "PizzaHunters.app"
-            BlueprintName = "PizzaHunters"
-            ReferencedContainer = "container:PizzaHunters.xcodeproj">
+            BuildableName = "GoodAsPizzaPlace.app"
+            BlueprintName = "GoodAsPizzaPlace"
+            ReferencedContainer = "container:GoodAsPizzaPlace.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4D4349941E86802C000EB4C6"
-            BuildableName = "PizzaHunters.app"
-            BlueprintName = "PizzaHunters"
-            ReferencedContainer = "container:PizzaHunters.xcodeproj">
+            BuildableName = "GoodAsPizzaPlace.app"
+            BlueprintName = "GoodAsPizzaPlace"
+            ReferencedContainer = "container:GoodAsPizzaPlace.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
