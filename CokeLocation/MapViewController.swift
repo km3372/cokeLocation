@@ -1,6 +1,6 @@
 //
 //  MapViewController.swift
-//  PizzaHunters
+//  
 //
 //  Created by Ken Moody on 3/25/17.
 //  Copyright © 2017 iMoodyStudios. All rights reserved.
@@ -15,9 +15,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     @IBOutlet weak var mapView :MKMapView?
     @IBOutlet weak var addressTextField :UITextField?
     
-    var locationManager :CLLocationManager = CLLocationManager()
-    var currentLocation :CLLocation?
-    var geocoder :CLGeocoder = CLGeocoder()
+    var 📡 :CLLocationManager = CLLocationManager()
+    var 👨🏾‍💻 :CLLocation?
+    var 🇺🇸 :CLGeocoder = CLGeocoder()
     
     override func viewDidLoad() {
         
@@ -28,12 +28,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     func setup() {
         
-        self.locationManager.delegate = self
-        self.locationManager.distanceFilter = kCLHeadingFilterNone
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.📡.delegate = self
+        self.📡.distanceFilter = kCLHeadingFilterNone
+        self.📡.desiredAccuracy = kCLLocationAccuracyBest
         
-        self.locationManager.requestAlwaysAuthorization()
-        self.locationManager.startUpdatingLocation()
+        self.📡.requestAlwaysAuthorization()
+        self.📡.startUpdatingLocation()
         self.mapView!.showsUserLocation = true
         
         // dropFavoriteAnnotation()
@@ -63,7 +63,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     func openDirections(_ address :String?) {
         
-        self.geocoder.geocodeAddressString(address!, completionHandler: { (placemarks :[CLPlacemark]?, error :NSError?) -> Void in
+        self.🇺🇸.geocodeAddressString(address!, completionHandler: { (placemarks :[CLPlacemark]?, error :NSError?) -> Void in
             
             let placemark = placemarks![0] as? CLPlacemark
             
@@ -112,19 +112,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         let googleCoordinate = CLLocationCoordinate2D(latitude: 37.422, longitude: -122.084058)
         
-        let favAnnotation = PizzaAnnotation(coordinate: googleCoordinate, title: "Good Ass Pizza Place", subtitle: nil)
+        let favAnnotation = CokeAnnotation(coordinate: googleCoordinate, title: "Coke Location", subtitle: nil)
         
         self.mapView?.addAnnotation(favAnnotation)
         
         // register to monitor region
-        let region = CLCircularRegion(center: googleCoordinate, radius: 1000, identifier: "FavoritePizzaRegion")
+        let region = CLCircularRegion(center: googleCoordinate, radius: 1000, identifier: "FavoriteCokeRegion")
         
         self.mapView?.add(MKCircle(center: googleCoordinate, radius: 1000))
         
         region.notifyOnEntry = true
         region.notifyOnExit = true
         
-        self.locationManager.startMonitoring(for: region)
+        self.📡.startMonitoring(for: region)
         
     }
     
@@ -159,7 +159,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         
-        self.currentLocation = userLocation.location
+        self.👨🏾‍💻 = userLocation.location
         
         let region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 250, 250)
         self.mapView!.setRegion(region, animated: true)
@@ -171,11 +171,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             return nil
         }
         
-        var annotationView = self.mapView?.dequeueReusableAnnotationView(withIdentifier: "PizzaAnnotationView")
+        var annotationView = self.mapView?.dequeueReusableAnnotationView(withIdentifier: "CokeAnnotationView")
         
         if(annotationView == nil) {
             
-            annotationView = PizzaAnnotationView(annotation: annotation, reuseIdentifier: "PizzaAnnotationView")
+            annotationView = CokeAnnotationView(annotation: annotation, reuseIdentifier: "CokeAnnotationView")
             annotationView?.canShowCallout = true
         }
         else {
@@ -191,7 +191,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         
         
-        self.geocoder.reverseGeocodeLocation(self.currentLocation!) { (placemarks :[CLPlacemark]?, error :Error?) in
+        self.🇺🇸.reverseGeocodeLocation(self.👨🏾‍💻!) { (placemarks :[CLPlacemark]?, error :Error?) in
             
             if error != nil { return }
             
@@ -201,9 +201,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                 
                 DispatchQueue.main.async(execute: { () -> Void in
                     
-                    let pizzaAnnotation = PizzaAnnotation(coordinate: self.currentLocation!.coordinate, title: "Pizza Hunters", subtitle: streetName)
+                    let cokeAnnotation = CokeAnnotation(coordinate: self.👨🏾‍💻!.coordinate, title: "Coke Location", subtitle: streetName)
                     
-                    self.mapView!.addAnnotation(pizzaAnnotation)
+                    self.mapView!.addAnnotation(cokeAnnotation)
                     
                 })
                 

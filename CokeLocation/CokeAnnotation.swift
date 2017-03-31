@@ -1,6 +1,6 @@
 //
-//  PizzaAnnotation.swift
-//  PizzaHunters
+//  Cokelocation.swift
+//  Cokelocation
 //
 //  Created by Ken Moody on 3/25/17.
 //  Copyright © 2017 iMoodyStudios. All rights reserved.
@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class PizzaAnnotation: NSObject, MKAnnotation {
+class CokeAnnotation: NSObject, MKAnnotation {
     
     var coordinate: CLLocationCoordinate2D
     var title: String?

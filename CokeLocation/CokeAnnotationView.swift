@@ -1,6 +1,6 @@
 //
-//  PizzaAnnotationView.swift
-//  PizzaHunters
+//  CokeAnnotationView.swift
+//  Cokelocation
 //
 //  Created by Ken Moody on 3/26/17.
 //  Copyright © 2017 iMoodyStudios. All rights reserved.
@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class PizzaAnnotationView: MKAnnotationView {
+class CokeAnnotationView: MKAnnotationView {
     
    
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
@@ -34,7 +34,7 @@ class PizzaAnnotationView: MKAnnotationView {
     override func draw(_ rect: CGRect) {
         // Drawing code
         
-        UIImage(named: "Pizza.png")?.draw(in: CGRect(x: 30, y: 30, width: 30, height: 30))
+        UIImage(named: "Coke.png")?.draw(in: CGRect(x: 30, y: 30, width: 30, height: 30))
         
     }
     

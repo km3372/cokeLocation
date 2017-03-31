@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  PizzaHunters
+//  Cokelocation
 //
 //  Created by Ken Moody on 3/25/17.
 //  Copyright © 2017 iMoodyStudios. All rights reserved.
