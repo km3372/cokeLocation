@@ -39,8 +39,8 @@
 
 /* Begin PBXFileReference section */
 		4D4349951E86802D000EB4C6 /* Cokelocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cokelocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D4349981E86802D000EB4C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4D43499A1E86802E000EB4C6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4D4349981E86802D000EB4C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PizzaHunters/AppDelegate.swift; sourceTree = "<group>"; };
+		4D43499A1E86802E000EB4C6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = PizzaHunters/MapViewController.swift; sourceTree = "<group>"; };
 		4D43499D1E86802E000EB4C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D43499F1E86802E000EB4C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D4349A21E86802E000EB4C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,8 +51,8 @@
 		4D4349B41E86802E000EB4C6 /* CokelocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CokelocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4349B81E86802E000EB4C6 /* PizzaHuntersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaHuntersUITests.swift; sourceTree = "<group>"; };
 		4D4349BA1E86802E000EB4C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D4349C61E86EAEB000EB4C6 /* CokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CokeAnnotation.swift; sourceTree = "<group>"; };
-		4DB060E41E883640001A2945 /* CokeAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CokeAnnotationView.swift; sourceTree = "<group>"; };
+		4D4349C61E86EAEB000EB4C6 /* CokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CokeAnnotation.swift; path = PizzaHunters/CokeAnnotation.swift; sourceTree = "<group>"; };
+		4DB060E41E883640001A2945 /* CokeAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CokeAnnotationView.swift; path = PizzaHunters/CokeAnnotationView.swift; sourceTree = "<group>"; };
 		8D46A5CE1E8D6BF5009782C7 /* CokeM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CokeM.png; path = ../../../CokeM.png; sourceTree = "<group>"; };
 		8D46A5D01E8D8BAE009782C7 /* Coke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Coke.png; path = ../../../Coke.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +85,9 @@
 		4D43498C1E86802C000EB4C6 = {
 			isa = PBXGroup;
 			children = (
+				4D77D85E1E92BDE30000E452 /* Model */,
+				4D77D85F1E92BDFC0000E452 /* View */,
+				4D77D8601E92BE100000E452 /* Controller */,
 				4D4349971E86802D000EB4C6 /* CokeLocation */,
 				4D4349AC1E86802E000EB4C6 /* CokeLocationTests */,
 				4D4349B71E86802E000EB4C6 /* CokelocationUITests */,
@@ -105,10 +108,6 @@
 		4D4349971E86802D000EB4C6 /* CokeLocation */ = {
 			isa = PBXGroup;
 			children = (
-				4D4349C61E86EAEB000EB4C6 /* CokeAnnotation.swift */,
-				4DB060E41E883640001A2945 /* CokeAnnotationView.swift */,
-				4D4349981E86802D000EB4C6 /* AppDelegate.swift */,
-				4D43499A1E86802E000EB4C6 /* MapViewController.swift */,
 				4D43499C1E86802E000EB4C6 /* Main.storyboard */,
 				8D46A5CE1E8D6BF5009782C7 /* CokeM.png */,
 				8D46A5D01E8D8BAE009782C7 /* Coke.png */,
@@ -138,6 +137,31 @@
 			);
 			name = CokelocationUITests;
 			path = PizzaHuntersUITests;
+			sourceTree = "<group>";
+		};
+		4D77D85E1E92BDE30000E452 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4D4349981E86802D000EB4C6 /* AppDelegate.swift */,
+				4D4349C61E86EAEB000EB4C6 /* CokeAnnotation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4D77D85F1E92BDFC0000E452 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DB060E41E883640001A2945 /* CokeAnnotationView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4D77D8601E92BE100000E452 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D43499A1E86802E000EB4C6 /* MapViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
